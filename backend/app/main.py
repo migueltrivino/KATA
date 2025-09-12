@@ -7,7 +7,7 @@ app = FastAPI(title="Notes App - MongoDB")
 # Configuración de CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # tu frontend React
+    allow_origins=["http://localhost:5173"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

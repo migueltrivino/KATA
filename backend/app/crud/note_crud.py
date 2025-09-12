@@ -4,7 +4,7 @@ from bson import ObjectId
 async def create_note(note_data: dict):
     result = await db.notes.insert_one(note_data)
     note = await db.notes.find_one({"_id": result.inserted_id})
-    note["id"] = str(note["_id"])  # alias para frontend
+    note["id"] = str(note["_id"])  
     return note
 
 async def get_notes(owner_id: str):
