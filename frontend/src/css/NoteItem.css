@@ -1,0 +1,99 @@
+.note-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.note-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.note-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.note-item textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.note-item textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+/* Botones encapsulados */
+.note-item-buttons {
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-item-buttons button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, transform 0.1s;
+}
+
+/* Botón principal verde */
+.note-item-buttons button:first-of-type {
+  background: #27ae60; 
+  color: white;
+}
+
+.note-item-buttons button:first-of-type:hover {
+  background: #1e8449;
+}
+
+/* Botón secundario rojo */
+.note-item-buttons button:last-of-type {
+  background: #e74c3c;
+  color: white;
+}
+
+.note-item-buttons button:last-of-type:hover {
+  background: #c0392b;
+}
+
+.note-item-buttons button:active {
+  transform: scale(0.97);
+}
+
+/* Vista previa */
+.note-item .preview {
+  background: #f9f9f9;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem; 
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.note-item .preview h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #34495e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.2rem;
+}

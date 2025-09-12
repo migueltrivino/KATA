@@ -1,0 +1,77 @@
+.note-editor {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.note-editor:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.note-editor h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.note-editor textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  margin-bottom: 0.8rem;
+  resize: vertical;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.note-editor textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+.note-editor button {
+  margin-top: 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.note-editor button:hover {
+  background: #1e8449;
+}
+
+.note-editor button:active {
+  transform: scale(0.97);
+}
+
+/* Preview ajustada para que quede más cerca */
+.note-editor .preview {
+  background: #fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 0.6rem; /* 🔹 Menos espacio que antes */
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.note-editor .preview h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #34495e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+}
