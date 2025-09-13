@@ -14,5 +14,5 @@ async def get_user_by_username(username: str):
     user = await db.users.find_one({"username": username})
     if user:
         user["id"] = str(user["_id"])
-        del user["_id"]  # ❌ Evita error al serializar
+        del user["_id"]  
     return user
